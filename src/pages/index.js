@@ -55,6 +55,7 @@ const IndexPage = () => (
             Find me here:{' '}
             <InterestsList
                 interests={[
+                    ['Email', 'mailto:hi@honey.sh'],
                     ['@Tibfib on Twitter', 'https://twitter.com/tibfib'],
                     ['Instagram', 'https://www.instagram.com/tibfib'],
                     ['Github', 'https://github.com/Tibfib'],
