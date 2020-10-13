@@ -1,8 +1,9 @@
 import Head from 'next/head';
+import Link from 'next/link';
+
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
 import Date from '../components/date';
 
 export default function Home({ allPostsData }) {
@@ -27,7 +28,7 @@ export default function Home({ allPostsData }) {
                         Operational Results
                     </a>{' '}
                     as their Director of Product. I live in Lehi, UT with my wife, two daughters,
-                    and goldendoodle, Winston.
+                    and goldendoodle, Winston. <Link href="/about-me">More about me.</Link>
                 </p>
             </section>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

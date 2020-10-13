@@ -1,5 +1,5 @@
 .container {
-    max-width: 36rem;
+    max-width: 38rem;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
 }
@@ -18,8 +18,29 @@
 .headerHomeImage {
     width: 8rem;
     height: 8rem;
+    margin: auto;
 }
 
 .backToHome {
     margin: 3rem 0 0;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    min-height: 500px;
+}
+
+.footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    column-gap: 10px;
 }

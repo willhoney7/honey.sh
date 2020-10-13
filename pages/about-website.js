@@ -47,6 +47,7 @@ export default function AboutWebsite() {
                         <a href="https://nextjs.org/" rel="noreferrer noopener">
                             Next.js
                         </a>
+                        . Is this the time I actually invest in this website? Who knows... not me!
                     </li>
                 </ul>
             </section>
