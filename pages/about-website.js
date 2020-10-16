@@ -48,8 +48,9 @@ export default function AboutWebsite() {
                         This fourth version, shipped in 2020, is built with{' '}
                         <a href="https://nextjs.org/" rel="noreferrer noopener">
                             Next.js
-                        </a>
-                        . Is this the time I actually invest in this website? Who knows... not me!
+                        </a>{' '}
+                        with a lightly modified starter template 😱. Is this the time I actually
+                        invest in this website? Who knows... not me!
                     </li>
                 </ul>
             </section>
