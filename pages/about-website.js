@@ -9,7 +9,9 @@ export default function AboutWebsite() {
                 <title>{siteTitle}</title>
             </Head>
             <section className={utilStyles.headingMd}>
-                <p>This is the *fourth* iteration of my personal website.</p>
+                <p>
+                    This is the <strong>fourth</strong> iteration of my personal website.
+                </p>
                 <ul>
                     <li>
                         The first version (~2010) was built on Wordpress with a theme by{' '}
