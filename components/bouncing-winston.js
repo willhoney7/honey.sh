@@ -17,7 +17,8 @@ export default function BouncingWinston() {
                     right: 20%;
                     width: 6rem;
                     height: 6rem;
-                    animation: bob 1500ms alternate ease infinite;
+                    animation: bob 1500ms alternate ease;
+                    animation-iteration-count: 10;
                     border-radius: 5px;
                     background-image: url('/images/winston_small.jpg');
                     background-size: cover;

@@ -1,7 +1,8 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
+import SocialLinks from './social-links';
 
 const name = 'Will Honey';
 export const siteTitle = 'Will Honey';
@@ -53,11 +54,7 @@ export default function Layout({ children, home }) {
                 </div>
             )}
 
-            <footer className={styles.footer}>
-                <a href="https://twitter.com/tibfib">Twitter @Tibfib</a>•
-                <a href="https://github.com/tibfib">Github @Tibfib</a>•
-                <a href="https://www.youtube.com/user/Tibfib1">YouTube @Tibfib1</a>
-            </footer>
+            <SocialLinks />
         </div>
     );
 }

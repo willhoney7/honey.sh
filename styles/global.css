@@ -30,10 +30,12 @@ img {
 .img-row {
     display: flex;
     flex-direction: flex-row;
-    column-gap: 10px;
+
     flex-wrap: wrap;
+    margin: 0 -5px;
 }
 
 .img-row > img {
-    width: 49%; /* TODO let's use some actual media queries */
+    width: 50%;
+    padding: 0 5px;
 }
