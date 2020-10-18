@@ -8,6 +8,7 @@ export default function SocialLinks() {
                     border-top: 1px solid #e4e4e4;
                     display: flex;
                     column-gap: 12px;
+                    opacity: 0.9;
                 }
 
                 img {
