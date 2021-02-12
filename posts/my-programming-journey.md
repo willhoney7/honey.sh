@@ -11,7 +11,7 @@ beyond me. It was complicated and there weren't enough resources out there.
 Eventually, Palm announced the Palm Pre and I was hooked. I spent tons of time
 watching videos, reading articles, and discussing the phone in online forums.
 
-Eventually the phone was released (on June 6th, 2009) and I got one. I remember
+I got one the day the phone released on June 6th, 2009. I remember
 on release day I spent much of my day on forums helping other new users answer
 questions and figure out how to use their new phones. I gained a little bit of
 notority in a VERY niche corner of the internet and was asked to be a "Technical
@@ -89,5 +89,5 @@ I learned and grew a ton in my first three years at ORI.
 I graduated in 2018 with my Computer Science Degree and moved to Xactware as a
 Senior Frontend Developer. I enjoyed it but began to miss the small company feeling
 of being _involved_. After a year, one of my coworkers from ORI reached out with an
-opportunity to come back to ORI and lead the product team. After some consideration I
+opportunity to come back and lead the product team. After some consideration I
 accepted and that's where I'm at today!

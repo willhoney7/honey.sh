@@ -40,7 +40,7 @@ export default function AboutWebsite() {
                         For the third version (2018), I made a basic site with{' '}
                         <a href="https://www.gatsbyjs.org/" rel="noreferrer noopener">
                             Gatsby
-                        </a>
+                        </a>{' '}
                         but found it too much work to get simple things done and never really did
                         anything with it.
                     </li>
