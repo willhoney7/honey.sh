@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
 
                 <p>
                     I work at <a href="https://operationalresults.com">Operational Results</a> as
-                    their Director of Product and live in Lehi, Utah with my wife, two little girls,
+                    their Director of Product and live in Lehi, Utah with my wife, three little girls,
                     and dog named Winston.
                 </p>
                 <p>
