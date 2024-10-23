@@ -1,23 +1,23 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next build && next export",
-    "start": "next start"
-  },
-  "dependencies": {
-    "date-fns": "^2.11.1",
-    "gray-matter": "^4.0.2",
-    "next": "9.5.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "remark": "^12.0.0",
-    "remark-html": "^12.0.0"
-  },
-  "devDependencies": {
-    "prettier": "^2.1.2"
-  }
+    "name": "honey.sh",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "export": "next build && next export",
+        "start": "next start"
+    },
+    "dependencies": {
+        "date-fns": "^4.1.0",
+        "gray-matter": "^4.0.3",
+        "next": "^14",
+        "react": "^18",
+        "react-dom": "^18",
+        "remark": "^15.0.1",
+        "remark-html": "^16.0.1"
+    },
+    "devDependencies": {
+        "prettier": "^3.3.3"
+    }
 }

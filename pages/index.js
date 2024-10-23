@@ -14,20 +14,33 @@ export default function Home({ allPostsData }) {
             </Head>
             <section className={utilStyles.headingMd}>
                 <p>
-                    Hi! 👋 I'm a Frontend Developer who likes to focus on excellent user experiences
-                    and pragmatism.
+                    Hi! 👋 <br />
+                    <br />I sit at the intersection of engineering, product, and design. I like to
+                    focus on excellent user experiences and pragmatism.
                 </p>
 
+                <p>Some of my recent technical interests include:</p>
+                <ul>
+                    <li>React and Remix</li>
+                    <li>TypeScript</li>
+                    <li>Vite and Vitest</li>
+                    <li>Tailwind</li>
+                    <li>Prettier</li>
+                </ul>
+
                 <p>
-                    I've been at this for 10+ years now. I got my start making apps for the webOS
+                    I've been at this for 12+ years now. I got my start making apps for the webOS
                     platform. You can read more about my programming journey in{' '}
                     <Link href="/posts/my-programming-journey">this blog post</Link>.
                 </p>
 
                 <p>
-                    I work at <a href="https://operationalresults.com">Operational Results</a> as
-                    their Director of Product and live in Lehi, Utah with my wife, three little girls,
-                    and dog named Winston.
+                    I work at{' '}
+                    <a href="https://ori.io" target="_blank">
+                        Operational Results
+                    </a>{' '}
+                    as their Director of Product Development and live in Kansas City with my wife,
+                    three little girls, and dog named Winston.
                 </p>
                 <p>
                     Welcome to the fourth iteration of my <Link href="/about-website">website</Link>
@@ -39,9 +52,7 @@ export default function Home({ allPostsData }) {
                 <ul className={utilStyles.list}>
                     {allPostsData.map(({ id, date, title }) => (
                         <li className={utilStyles.listItem} key={id}>
-                            <Link href={`/posts/${id}`}>
-                                <a>{title}</a>
-                            </Link>
+                            <Link href={`/posts/${id}`}>{title}</Link>
                             <br />
                             <small className={utilStyles.lightText}>
                                 <Date dateString={date} />

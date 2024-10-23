@@ -20,26 +20,24 @@ export default function Layout({ children, home }) {
                 {home ? (
                     <>
                         <img
-                            src="/images/me_living_room_square.jpg"
+                            src="/images/me_2024_alt.jpg"
                             className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-                            alt={'Will Honey, a few years ago'}
+                            alt={'Will Honey with wife in 2024'}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
                     </>
                 ) : (
                     <>
                         <Link href="/">
-                            <a>
-                                <img
-                                    src="/images/me_living_room_square.jpg"
-                                    className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                                    alt={'Will Honey, a few years ago'}
-                                />
-                            </a>
+                            <img
+                                src="/images/me_2024_alt.jpg"
+                                className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                                alt={'Will Honey with wife in 2024'}
+                            />
                         </Link>
                         <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
+                            <Link href="/" className={utilStyles.colorInherit}>
+                                {name}
                             </Link>
                         </h2>
                     </>
@@ -48,9 +46,7 @@ export default function Layout({ children, home }) {
             <main className={styles.main}>{children}</main>
             {!home && (
                 <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
+                    <Link href="/">← Back to home</Link>
                 </div>
             )}
 

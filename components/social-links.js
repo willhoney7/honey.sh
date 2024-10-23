@@ -20,28 +20,39 @@ export default function SocialLinks() {
                 <a href="https://twitter.com/tibfib" target="_blank" rel="noreferrer noopener">
                     <img alt="@Tibfib on Twitter" src="/images/social/iconmonstr-twitter.png" />
                 </a>
+
                 <a href="mailto:hi@honey.sh" target="_blank" rel="noreferrer noopener">
                     <img alt="Email hi@honey.sh" src="/images/social/iconmonstr-email.png" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/will-honey/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    <img
+                        alt="Will Honey on LinkedIn"
+                        src="/images/social/iconmonstr-linkedin.png"
+                    />
                 </a>
                 <a href="https://github.com/willhoney7" target="_blank" rel="noreferrer noopener">
                     <img alt="@willhoney7 on Github" src="/images/social/iconmonstr-github.png" />
                 </a>
                 <a
-                    href="https://www.youtube.com/user/Tibfib1"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
-                    <img alt="@Tibfib1 on YouTube" src="/images/social/iconmonstr-youtube.png" />
-                </a>
-                <a
-                    href="https://open.spotify.com/user/tibfib?si=fSM6ItQNQ8iKK9lzv1xt_w"
+                    href="https://open.spotify.com/user/tibfib"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
                     <img alt="@Tibfib on Spotify" src="/images/social/iconmonstr-spotify.png" />
                 </a>
-                <a href="https://instagram.com/willhoney7" target="_blank" rel="noreferrer noopener">
-                    <img alt="@willhoney7 on Instagram" src="/images/social/iconmonstr-instagram.png" />
+                <a
+                    href="https://instagram.com/willhoney7"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    <img
+                        alt="@willhoney7 on Instagram"
+                        src="/images/social/iconmonstr-instagram.png"
+                    />
                 </a>
             </footer>
         </>

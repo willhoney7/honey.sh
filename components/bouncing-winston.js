@@ -1,3 +1,4 @@
+import React from 'react';
 export default function BouncingWinston() {
     const [isPlayingAnimation, setisPlayingAnimation] = React.useState(true);
 

@@ -25,11 +25,7 @@ export default function AboutWebsite() {
                         .
                     </li>
                     <li>
-                        The{' '}
-                        <a href="https://v2.honey.sh" target="_blank" rel="noreferrer noopener">
-                            second iteration
-                        </a>{' '}
-                        (2012) was written with{' '}
+                        The second iteration (2012) was written with{' '}
                         <a href="https://jekyllrb.com/" target="_blank" rel="noreferrer noopener">
                             Jekyll
                         </a>{' '}
