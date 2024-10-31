@@ -6,8 +6,7 @@ date: '2020-10-12'
 I grew up in Manhattan, Kansas. In middle school, I really wanted an iPhone, but
 back then they were locked to AT&T which our small town didn't have. I ended up
 getting a Samsung Instinct (whose ads famously claimed it was an iPhone killer–it was bad).
-I tried learning how to program apps on it but it was
-beyond me. It was complicated and there weren't enough resources out there.
+I tried learning how to program apps on it but I gave up. It was complicated and there weren't enough resources out there.
 Eventually, Palm announced the Palm Pre and I was hooked. I spent tons of time
 watching videos, reading articles, and discussing the phone in online forums.
 
@@ -20,7 +19,7 @@ Reviewer" of [Palm Pre: The Missing Manual](https://www.amazon.com/Palm-Pre-Miss
 Fast forward a few months, I decided to try my hand at programming again (age 14 or so). With
 webOS, I was greeted by a warm IRC community and good documentation. Through the
 help of many other developers, I figured it out and released a few apps. My
-first was a puzzle game called [Countdown Puzzles](https://www.webosnation.com/countdown-puzzles).
+first was a puzzle game called [Countdown Puzzles](https://web.archive.org/web/20230102021518/https://www.webosnation.com/countdown-puzzles).
 I wrote the majority of the code during a family road trip. I still remember the
 feeling of building something "real" (not a tutorial) for the first time and
 thinking, "I can do this."
@@ -36,7 +35,7 @@ thinking, "I can do this."
 />
 </div>
 
-Another app I made was a music player called [Koto Player](https://www.webosnation.com/koto-player-229). A news site even wrote up an [App Preview](https://www.webosnation.com/app-preview-koto-player) for it. I was really proud of that one.
+Another app I made was a music player called [Koto Player](https://web.archive.org/web/20230102043230/https://www.webosnation.com/koto-player-229). A news site even wrote up an [App Preview](https://web.archive.org/web/20230102104554/https://www.webosnation.com/app-preview-koto-player) for it. I was really proud of that one.
 
 <div class="img-row">
 <img
