@@ -1,0 +1,189 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family:
+		-apple-system,
+		BlinkMacSystemFont,
+		Segoe UI,
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		Fira Sans,
+		Droid Sans,
+		Helvetica Neue,
+		sans-serif;
+	line-height: 1.5;
+	font-size: 17px;
+	color: #222222;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: #a52626;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.container {
+	max-width: 38rem;
+	padding: 0 1rem;
+	margin: 3rem auto 6rem;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-image {
+	width: 6rem;
+	height: 6rem;
+}
+
+.header-home-image {
+	width: 8rem;
+	height: 8rem;
+	margin: auto;
+}
+
+.main {
+	min-height: 500px;
+}
+
+.back-to-home {
+	margin: 3rem 0 0;
+}
+
+.heading-2xl {
+	font-size: 2.6rem;
+	line-height: 1.2;
+	font-weight: 800;
+	margin: 1rem 0;
+}
+
+.heading-xl {
+	font-size: 2rem;
+	line-height: 1.3;
+	font-weight: 800;
+	margin: 1rem 0;
+}
+
+.heading-lg {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	margin: 1rem 0;
+}
+
+.heading-md {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.border-circle {
+	border-radius: 9999px;
+}
+
+.color-inherit {
+	color: inherit;
+}
+
+.padding-1px {
+	padding-top: 1px;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.list-item {
+	margin: 0 0 1.25rem;
+}
+
+.light-text {
+	color: #666;
+}
+
+.img-row {
+	display: flex;
+	flex-direction: flex-row;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+
+.img-row > img {
+	width: 50%;
+	padding: 0 5px;
+}
+
+blockquote {
+	border-left: 4px solid #4a4a4a;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.social-links {
+	margin-top: 3rem;
+	padding-top: 1rem;
+	border-top: 1px solid #e4e4e4;
+	display: flex;
+	column-gap: 12px;
+	opacity: 0.9;
+}
+
+.social-links img {
+	width: 36px;
+	height: 36px;
+}
+
+@keyframes bob {
+	0% {
+		transform: translateY(0rem);
+	}
+	100% {
+		transform: translateY(-8.5rem);
+	}
+}
+
+.winston-container {
+	position: fixed;
+	bottom: -7rem;
+	right: 20%;
+}
+
+.winston {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 5px;
+	background-image: url('/images/winston_small.jpg');
+	background-size: cover;
+	background-color: #d79b5f;
+	animation: bob 1500ms alternate ease;
+	animation-iteration-count: 6;
+}
+
+.winston:hover {
+	background-image: url('/images/winston_goofy_small.jpg');
+	animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion) {
+	.winston {
+		display: none;
+	}
+}
