@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
+import type { Root } from 'mdast';
 import { remark } from 'remark';
-import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -13,7 +13,7 @@ export type PostSummary = {
 };
 
 export type PostData = PostSummary & {
-	contentHtml: string;
+	content: Root;
 };
 
 export function getSortedPostsData() {
@@ -37,12 +37,11 @@ export async function getPostData(id: string): Promise<PostData | undefined> {
 
 	let fileContents = fs.readFileSync(fullPath, 'utf8');
 	let matterResult = matter(fileContents);
-	let processedContent = await remark().use(html).process(matterResult.content);
 	let { date, title } = readPostMetadata(matterResult.data, fullPath);
 
 	return {
 		id,
-		contentHtml: processedContent.toString(),
+		content: remark().parse(matterResult.content),
 		date,
 		title,
 	};

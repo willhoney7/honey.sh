@@ -1,12 +1,21 @@
 import type { Handle, RemixNode } from 'remix/ui';
 
+import { routes } from '../routes.ts';
+import {
+	faviconHref,
+	siteDescription,
+	siteTitle,
+	stylesheetHref,
+	twitterCard,
+} from './site-meta.ts';
+
 export interface DocumentProps {
 	children?: RemixNode;
 	head?: RemixNode;
 	title?: string;
 }
 
-export const siteTitle = 'Will Honey';
+export { siteTitle };
 
 export function Document(handle: Handle<DocumentProps>) {
 	return () => {
@@ -17,15 +26,21 @@ export function Document(handle: Handle<DocumentProps>) {
 				<head>
 					<meta charSet="utf-8" />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<link rel="icon" href="/favicon.ico" />
-					<link rel="stylesheet" href="/styles.css" />
-					<meta name="description" content="The development blog of Will Honey" />
+					<link rel="icon" href={faviconHref} />
+					<link rel="stylesheet" href={stylesheetHref} />
+					<meta name="description" content={siteDescription} />
 					<meta name="og:title" content={siteTitle} />
-					<meta name="twitter:card" content="summary_large_image" />
+					<meta name="twitter:card" content={twitterCard} />
 					<title>{title}</title>
 					{head}
 				</head>
-				<body>{children}</body>
+				<body>
+					{children}
+					<script
+						type="module"
+						src={routes.assets.href({ path: 'app/assets/entry.ts' })}
+					></script>
+				</body>
 			</html>
 		);
 	};

@@ -57,7 +57,7 @@ worked on a special project for the BYU IT department measuring server
 performance. It was an interesting experience, the software I worked with
 supported a weird Java + JavaScript hybrid language.
 
-In 2015, I got an internship at Operational Results (ORI) as a
+I started working at Operational Results (ORI) in the summer of 2015 as a
 frontend developer. That went well and I continued working with them while
 I finished my degree––working full-time in the summer and part-time during
 school. Early on, the lead frontend developer quit and I grew into that role.

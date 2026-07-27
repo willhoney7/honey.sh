@@ -1,29 +1,17 @@
-import { html } from 'remix/html-template';
 import { createController } from 'remix/router';
 
 import { getPostData } from '../../data/posts.ts';
 import { routes } from '../../routes.ts';
-import { formatDate } from '../../ui/date.tsx';
-import { renderHtmlDocument, siteLayoutHtml } from '../html.ts';
+import { PostPage } from '../../ui/post-page.tsx';
 
 export default createController(routes.posts, {
 	actions: {
-		async show({ params }) {
+		async show(context) {
+			let { params } = context;
 			let postData = await getPostData(params.id);
 			if (!postData) return new Response('Not Found', { status: 404 });
 
-			return renderHtmlDocument(
-				postData.title,
-				siteLayoutHtml(html`
-					<article>
-						<h1 class="heading-xl">${postData.title}</h1>
-						<div class="light-text">
-							<time datetime="${postData.date}">${formatDate(postData.date)}</time>
-						</div>
-						<div>${html.raw`${postData.contentHtml}`}</div>
-					</article>
-				`)
-			);
+			return context.render(<PostPage postData={postData} />);
 		},
 	},
 });

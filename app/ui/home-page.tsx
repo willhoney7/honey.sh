@@ -60,7 +60,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 							<li>Watching TV shows.</li>
 						</ul>
 						<p>
-							Welcome to the fourth iteration of my{' '}
+							Welcome to the fifth iteration of my{' '}
 							<a href={routes.aboutWebsite.href()}>website</a>.
 						</p>
 					</section>

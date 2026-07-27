@@ -42,12 +42,18 @@ export function AboutWebsitePage() {
 							did anything with it.
 						</li>
 						<li>
-							This fourth version, shipped in 2020, is built with{' '}
+							The fourth version, shipped in 2020, was built with{' '}
 							<a href="https://nextjs.org/" rel="noreferrer noopener">
 								Next.js
 							</a>{' '}
-							with a lightly modified starter template 😱. Is this the time I actually
-							invest in this website? Who knows... not me!
+							with a lightly modified starter template 😱.
+						</li>
+							<li>
+							This fifth version, shipped in 2026, was built with{' '}
+							<a href="https://remix.run/" rel="noreferrer noopener">
+								Remix
+							</a>{' '}
+							.
 						</li>
 					</ul>
 				</section>
