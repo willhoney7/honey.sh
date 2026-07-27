@@ -3,7 +3,6 @@ import type { Handle } from 'remix/ui';
 import type { PostData } from '../data/posts.ts';
 import { Date } from './date.tsx';
 import { Document } from './document.tsx';
-import { Markdown } from './markdown.tsx';
 import { SiteLayout } from './site-layout.tsx';
 
 export function PostPage(handle: Handle<{ postData: PostData }>) {
@@ -18,7 +17,7 @@ export function PostPage(handle: Handle<{ postData: PostData }>) {
 						<div className="light-text">
 							<Date dateString={postData.date} />
 						</div>
-						<Markdown content={postData.content} />
+						<div innerHTML={postData.html} />
 					</article>
 				</SiteLayout>
 			</Document>
