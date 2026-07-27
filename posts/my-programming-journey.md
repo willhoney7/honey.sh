@@ -57,10 +57,7 @@ worked on a special project for the BYU IT department measuring server
 performance. It was an interesting experience, the software I worked with
 supported a weird Java + JavaScript hybrid language.
 
-From 2013 to 2015, I went down to Brazil as a Missionary for the Church of Jesus
-Christ of Latter-day Saints. (I didn't do any programming).
-
-Upon my return in 2015, I got an internship at Operational Results (ORI) as a
+In 2015, I got an internship at Operational Results (ORI) as a
 frontend developer. That went well and I continued working with them while
 I finished my degree––working full-time in the summer and part-time during
 school. Early on, the lead frontend developer quit and I grew into that role.
@@ -70,4 +67,4 @@ I graduated in 2018 with my Computer Science Degree and moved to Xactware as a
 Senior Frontend Developer. I enjoyed it but began to miss the small company feeling
 of being _involved_. After a year, one of my coworkers from ORI reached out with an
 opportunity to come back and lead the product team. After some consideration I
-accepted and that's where I'm at today!
+accepted and have since been promoted to CTO.
