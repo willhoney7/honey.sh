@@ -5,7 +5,7 @@ tags: Prettier, JavaScript, ESLint, Formatting
 date: '2019-02-19'
 ---
 
-<div style="padding: 20px 20px; background-color: rgba(0,0,0,0.05); border-radius: 5px; margin-top: 10px; font-size: smaller; color: gray;">ℹ️&nbsp;&nbsp;&nbsp;This post was <a href="https://dev.to/tibfib/why-prettier-18mj" target="_blank" rel="noreferrer noopener">first published on dev.to</a>.</div>
+> This post was [first published on dev.to](https://dev.to/tibfib/why-prettier-18mj).
 
 At my previous job, I was the lead frontend developer at a small startup. I was also the only frontend developer. As such, I could do basically whatever I wanted. I heard about Prettier through twitter and decided to try it. I immediately loved it and added it as a [pre-commit hook](https://prettier.io/docs/en/precommit.html). I stopped caring about formatting my code. I just typed it out, pressed save, and like magic, prettier would make it look _good enough_.
 

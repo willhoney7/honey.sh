@@ -24,29 +24,13 @@ I wrote the majority of the code during a family road trip. I still remember the
 feeling of building something "real" (not a tutorial) for the first time and
 thinking, "I can do this."
 
-<div class="img-row">
-<img
-    src="/images/my-programming-journey/countdownpuzzles_home.png"
-    alt="Home page of Countdown Puzzles, my first webOS app"
-/>
-<img
-    src="/images/my-programming-journey/countdownpuzzles_game.png"
-    alt="Game page of Countdown Puzzles, my first webOS app"
-/>
-</div>
+![Home page of Countdown Puzzles, my first webOS app](/images/my-programming-journey/countdownpuzzles_home.png)
 
 Another app I made was a music player called [Koto Player](https://web.archive.org/web/20230102043230/https://www.webosnation.com/koto-player-229). A news site even wrote up an [App Preview](https://web.archive.org/web/20230102104554/https://www.webosnation.com/app-preview-koto-player) for it. I was really proud of that one.
 
-<div class="img-row">
-<img
-    src="/images/my-programming-journey/kotoplayer_nowplaying.png"
-    alt="Now playing page of Koto Player, a webOS app"
-/>
-<img
-    src="/images/my-programming-journey/kotoplayer_artistview.png"
-    alt="Artist view page of Koto Player, a webOS app"
-/>
-</div>
+![Now playing page of Koto Player, a webOS app](/images/my-programming-journey/kotoplayer_nowplaying.png)
+
+![Artist view page of Koto Player, a webOS app](/images/my-programming-journey/kotoplayer_artistview.png)
 
 Along the way, I also spent a lot of time on the open source twitter client,
 [Spaz](https://github.com/spazproject). In addition, I worked on a messaging app
@@ -63,10 +47,7 @@ devices out there but still the same amount of applications for sale. I still
 remember the feeling of opening of the app catalog developer portal and seeing
 how many sales I'd had. It was a wild time.
 
-<img
-    src="/images/my-programming-journey/nomnomnom.png"
-    alt="Screenshot of NomNomNom, a Google Reader client for the HP Touchapd"
-/>
+![Screenshot of NomNomNom, a Google Reader client for the HP Touchpad](/images/my-programming-journey/nomnomnom.png)
 
 In 2012, I started in the Computer Science program at BYU. I honestly didn't
 enjoy it very much, but I knew that software development was what I wanted to do

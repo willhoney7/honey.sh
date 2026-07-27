@@ -23,15 +23,16 @@ export default function Home({
 
 				<p>Some of my recent technical interests include:</p>
 				<ul>
-					<li>React and Remix</li>
+					<li>React and Tanstack Start</li>
 					<li>TypeScript</li>
+					<li>Rust</li>
 					<li>Vite and Vitest</li>
 					<li>Tailwind</li>
 					<li>Prettier</li>
 				</ul>
 
 				<p>
-					I've been at this for 12+ years now. I got my start making apps for the webOS
+					I've been at this for 15+ years now. I got my start making apps for the webOS
 					platform. You can read more about my programming journey in{' '}
 					<Link href="/posts/my-programming-journey">this blog post</Link>.
 				</p>
@@ -41,7 +42,7 @@ export default function Home({
 					<a href="https://ori.io" target="_blank">
 						Operational Results
 					</a>{' '}
-					as their Director of Product Development and live in Kansas City with my wife,
+					as their CTO and live in Kansas City with my wife,
 					three little girls, and dog named Winston.
 				</p>
 				<p>

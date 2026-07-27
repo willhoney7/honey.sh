@@ -37,23 +37,6 @@ export default function SocialLinks() {
 				<a href="https://github.com/willhoney7" target="_blank" rel="noreferrer noopener">
 					<img alt="@willhoney7 on Github" src="/images/social/iconmonstr-github.png" />
 				</a>
-				<a
-					href="https://open.spotify.com/user/tibfib"
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					<img alt="@Tibfib on Spotify" src="/images/social/iconmonstr-spotify.png" />
-				</a>
-				<a
-					href="https://instagram.com/willhoney7"
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					<img
-						alt="@willhoney7 on Instagram"
-						src="/images/social/iconmonstr-instagram.png"
-					/>
-				</a>
 			</footer>
 		</>
 	);
