@@ -21,15 +21,15 @@ export function PostPage(handle: Handle<{ postData: PostData }>) {
 						<h1 className="my-4 text-[2rem] leading-[1.3] font-extrabold">
 							{postData.title}
 						</h1>
-						<div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
+						<div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500 dark:text-sky-200/70">
 							<Date dateString={postData.date} />
-							<span aria-hidden="true" className="text-neutral-300">
+							<span aria-hidden="true" className="text-neutral-300 dark:text-sky-700">
 								·
 							</span>
 							<PostTags tags={postData.tags} />
 						</div>
 						<div
-							className="prose prose-neutral mt-8 max-w-none prose-a:text-red-800"
+							className="prose prose-neutral mt-8 max-w-none prose-a:text-red-800 dark:prose-invert dark:prose-a:text-sky-300"
 							innerHTML={postData.html}
 						/>
 					</article>

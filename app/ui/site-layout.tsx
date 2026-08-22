@@ -13,7 +13,7 @@ export function SiteLayout(
 		return (
 			<>
 				<PrimaryNavigation section={section} />
-				<div className="mx-auto mt-10 mb-24 max-w-[38rem] px-4 text-[17px] leading-6 text-neutral-800 [&_a]:text-red-800 [&_a]:no-underline [&_a:hover]:underline">
+				<div className="mx-auto mt-10 mb-24 max-w-[38rem] px-4 text-[17px] leading-6 text-neutral-800 dark:text-sky-50 [&_a]:text-red-800 dark:[&_a]:text-sky-300 [&_a]:no-underline [&_a:hover]:underline">
 					<header className="flex flex-col items-center">
 						{home ? (
 							<>
@@ -59,7 +59,7 @@ function PrimaryNavigation(handle: Handle<{ section?: SiteSection }>) {
 		return (
 			<nav
 				aria-label="Primary navigation"
-				className="sticky top-0 z-50 bg-sky-950 text-sm shadow-sm"
+				className="sticky top-0 z-50 bg-sky-950 text-sm shadow-sm dark:bg-sky-900"
 			>
 				<div className="mx-auto flex max-w-[38rem] gap-7 px-4 py-4">
 					<NavigationLink
@@ -100,7 +100,7 @@ function NavigationLink(handle: Handle<{ active: boolean; href: string; label: s
 
 function SocialLinks() {
 	return () => (
-		<footer className="mt-12 flex gap-x-3 border-t border-neutral-200 pt-4 opacity-90 [&_img]:size-9">
+		<footer className="mt-12 flex gap-x-3 border-t border-neutral-200 pt-4 opacity-90 dark:border-sky-800 [&_img]:size-9 dark:[&_img]:invert">
 			<a href="https://twitter.com/tibfib" target="_blank" rel="noreferrer noopener">
 				<img alt="@Tibfib on Twitter" src="/images/social/iconmonstr-twitter.png" />
 			</a>

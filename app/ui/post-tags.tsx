@@ -20,6 +20,6 @@ export function PostTags(handle: Handle<{ tags: readonly PostTag[] }>) {
 }
 
 const tagClassNames = {
-	dev: 'inline-flex items-center rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-700! ring-1 ring-sky-200 ring-inset transition-colors hover:bg-sky-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600',
-	life: 'inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-800! ring-1 ring-amber-200 ring-inset transition-colors hover:bg-amber-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600',
+	dev: 'inline-flex items-center rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-700! ring-1 ring-sky-200 ring-inset transition-colors hover:bg-sky-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 dark:bg-sky-800/70 dark:text-sky-100! dark:ring-sky-700 dark:hover:bg-sky-800',
+	life: 'inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-800! ring-1 ring-amber-200 ring-inset transition-colors hover:bg-amber-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 dark:bg-amber-900/60 dark:text-amber-100! dark:ring-amber-700 dark:hover:bg-amber-900',
 } as const;

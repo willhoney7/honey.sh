@@ -59,8 +59,8 @@ function TagFilter(handle: Handle<{ active: boolean; href: string; label: string
 	return () => {
 		let { active, href, label } = handle.props;
 		let stateClassNames = active
-			? 'bg-neutral-800 text-white! ring-neutral-800'
-			: 'bg-white text-neutral-700! ring-neutral-300 hover:bg-neutral-50';
+			? 'bg-neutral-800 text-white! ring-neutral-800 dark:bg-sky-200 dark:text-sky-950! dark:ring-sky-200'
+			: 'bg-white text-neutral-700! ring-neutral-300 hover:bg-neutral-50 dark:bg-sky-900 dark:text-sky-100! dark:ring-sky-700 dark:hover:bg-sky-800';
 
 		return (
 			<a
@@ -85,7 +85,7 @@ function Pagination(
 		return (
 			<nav
 				aria-label="Blog pagination"
-				className="mt-10 flex items-center justify-between border-t border-neutral-200 pt-6 text-sm"
+				className="mt-10 flex items-center justify-between border-t border-neutral-200 pt-6 text-sm dark:border-sky-800"
 			>
 				<PaginationLink
 					direction="previous"
@@ -93,7 +93,7 @@ function Pagination(
 					selectedTag={selectedTag}
 					totalPages={totalPages}
 				/>
-				<span className="text-neutral-500">
+				<span className="text-neutral-500 dark:text-sky-200/70">
 					Page {currentPage} of {totalPages}
 				</span>
 				<PaginationLink
@@ -123,7 +123,10 @@ function PaginationLink(
 
 		if (disabled) {
 			return (
-				<span aria-disabled="true" className={`w-24 text-neutral-300 ${alignment}`}>
+				<span
+					aria-disabled="true"
+					className={`w-24 text-neutral-300 dark:text-sky-800 ${alignment}`}
+				>
 					{label}
 				</span>
 			);

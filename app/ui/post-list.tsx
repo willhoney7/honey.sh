@@ -16,9 +16,9 @@ export function PostList(handle: Handle<{ posts: PostSummary[] }>) {
 						<a className="text-xl font-semibold" href={routes.posts.show.href({ id })}>
 							{title}
 						</a>
-						<div className="mt-1 flex flex-wrap items-center gap-2 text-sm text-neutral-500">
+						<div className="mt-1 flex flex-wrap items-center gap-2 text-sm text-neutral-500 dark:text-sky-200/70">
 							<Date dateString={date} />
-							<span aria-hidden="true" className="text-neutral-300">
+							<span aria-hidden="true" className="text-neutral-300 dark:text-sky-700">
 								·
 							</span>
 							<PostTags tags={tags} />

@@ -12,7 +12,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 		return (
 			<Document title={siteTitle}>
 				<SiteLayout home section="home">
-					<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800">
+					<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800 dark:prose-invert dark:prose-a:text-sky-300">
 						<p>
 							Hi! 👋 <br />
 							<br />I sit at the intersection of engineering, product, and design. I
@@ -63,7 +63,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 							Welcome to the fifth iteration of my{' '}
 							<a href={routes.aboutWebsite.href()}>website</a>.
 						</p>
-						
+
 						<p>
 							You can find my <a href={routes.blog.href()}>blog here</a>.
 						</p>

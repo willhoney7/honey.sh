@@ -38,7 +38,7 @@ export function Document(handle: Handle<DocumentProps>) {
 					))}
 					{head}
 				</head>
-				<body>
+				<body className="min-h-screen bg-white dark:bg-sky-950">
 					{children}
 					<HMR />
 					<script type="module" src={clientAssets.entry}></script>

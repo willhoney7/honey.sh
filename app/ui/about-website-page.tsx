@@ -5,7 +5,7 @@ export function AboutWebsitePage() {
 	return () => (
 		<Document title={siteTitle}>
 			<SiteLayout>
-				<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800">
+				<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800 dark:prose-invert dark:prose-a:text-sky-300">
 					<p>
 						This is the <strong>fourth</strong> iteration of my personal website.
 					</p>
