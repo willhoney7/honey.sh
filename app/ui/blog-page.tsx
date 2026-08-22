@@ -11,9 +11,10 @@ export function BlogPage(handle: Handle<PostsPage>) {
 		let { currentPage, posts, selectedTag, totalPages } = handle.props;
 		let title = selectedTag ? `${selectedTag} posts` : 'Blog';
 		if (currentPage > 1) title += ` – Page ${currentPage}`;
+		let path = getBlogPageHref(currentPage, selectedTag);
 
 		return (
-			<Document title={title}>
+			<Document path={path} title={title}>
 				<SiteLayout section="blog">
 					<section>
 						<h1 className="my-4 text-[2rem] leading-[1.3] font-extrabold">Blog</h1>

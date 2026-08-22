@@ -10,7 +10,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 		let { allPostsData } = handle.props;
 
 		return (
-			<Document title={siteTitle}>
+			<Document path={routes.home.href()} title={siteTitle}>
 				<SiteLayout home section="home">
 					<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800 dark:prose-invert dark:prose-a:text-sky-300">
 						<p>
@@ -57,7 +57,10 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 								Introducing my kids to Pokemon Fire Red and other childhood
 								classics.
 							</li>
-							<li>Watching sports, TV shows, and playing video games when I get a moment.</li>
+							<li>
+								Watching sports, TV shows, and playing video games when I get a
+								moment.
+							</li>
 						</ul>
 						<p>
 							Welcome to the fifth iteration of my{' '}

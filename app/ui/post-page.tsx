@@ -12,7 +12,12 @@ export function PostPage(handle: Handle<{ postData: PostData }>) {
 		let { postData } = handle.props;
 
 		return (
-			<Document title={postData.title}>
+			<Document
+				description="A blog post by Will Honey"
+				path={routes.posts.show.href({ id: postData.id })}
+				socialType="article"
+				title={postData.title}
+			>
 				<SiteLayout section="blog">
 					<article>
 						<div className="mb-6">

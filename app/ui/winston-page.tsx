@@ -1,9 +1,20 @@
+import { routes } from '../routes.ts';
 import { Document } from './document.tsx';
 import { SiteLayout } from './site-layout.tsx';
 
 export function WinstonPage() {
 	return () => (
-		<Document title="Winston">
+		<Document
+			description="Photos of Winston"
+			path={routes.winston.href()}
+			socialImage={{
+				alt: 'Winston',
+				height: 3003,
+				path: '/images/winston_square.jpg',
+				width: 2990,
+			}}
+			title="Winston"
+		>
 			<SiteLayout>
 				<section>
 					<h1 className="my-4 text-[2rem] leading-[1.3] font-extrabold">Winston</h1>
