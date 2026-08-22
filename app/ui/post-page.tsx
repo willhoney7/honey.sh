@@ -1,6 +1,7 @@
 import type { Handle } from 'remix/ui';
 
 import type { PostData } from '../data/posts.ts';
+import { routes } from '../routes.ts';
 import { Date } from './date.tsx';
 import { Document } from './document.tsx';
 import { PostTags } from './post-tags.tsx';
@@ -12,8 +13,11 @@ export function PostPage(handle: Handle<{ postData: PostData }>) {
 
 		return (
 			<Document title={postData.title}>
-				<SiteLayout>
+				<SiteLayout section="blog">
 					<article>
+						<div className="mb-6">
+							<a href={routes.blog.href()}>← Back to blog</a>
+						</div>
 						<h1 className="my-4 text-[2rem] leading-[1.3] font-extrabold">
 							{postData.title}
 						</h1>

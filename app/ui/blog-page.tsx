@@ -14,16 +14,20 @@ export function BlogPage(handle: Handle<PostsPage>) {
 
 		return (
 			<Document title={title}>
-				<SiteLayout>
+				<SiteLayout section="blog">
 					<section>
 						<h1 className="my-4 text-[2rem] leading-[1.3] font-extrabold">Blog</h1>
 						<TagFilters selectedTag={selectedTag} />
-						<PostList posts={posts} />
-						<Pagination
-							currentPage={currentPage}
-							selectedTag={selectedTag}
-							totalPages={totalPages}
-						/>
+						<div className="min-h-[500px]">
+							<PostList posts={posts} />
+						</div>
+						{totalPages > 1 ? (
+							<Pagination
+								currentPage={currentPage}
+								selectedTag={selectedTag}
+								totalPages={totalPages}
+							/>
+						) : null}
 					</section>
 				</SiteLayout>
 			</Document>

@@ -1,49 +1,99 @@
 import type { Handle, RemixNode } from 'remix/ui';
 
-export function SiteLayout(handle: Handle<{ children?: RemixNode; home?: boolean }>) {
+import { routes } from '../routes.ts';
+
+type SiteSection = 'blog' | 'home';
+
+export function SiteLayout(
+	handle: Handle<{ children?: RemixNode; home?: boolean; section?: SiteSection }>
+) {
 	return () => {
-		let { children, home = false } = handle.props;
+		let { children, home = false, section } = handle.props;
 
 		return (
-			<div className="mx-auto mt-12 mb-24 max-w-[38rem] px-4 text-[17px] leading-6 text-neutral-800 [&_a]:text-red-800 [&_a]:no-underline [&_a:hover]:underline">
-				<header className="flex flex-col items-center">
-					{home ? (
-						<>
-							<img
-								src="/images/me_2024_alt.jpg"
-								className="size-32 rounded-full object-cover"
-								alt="Will Honey with wife in 2024"
-							/>
-							<h1 className="my-4 text-[2.6rem] leading-[1.2] font-extrabold">
-								Will Honey
-							</h1>
-						</>
-					) : (
-						<>
-							<a href="/">
+			<>
+				<PrimaryNavigation section={section} />
+				<div className="mx-auto mt-10 mb-24 max-w-[38rem] px-4 text-[17px] leading-6 text-neutral-800 [&_a]:text-red-800 [&_a]:no-underline [&_a:hover]:underline">
+					<header className="flex flex-col items-center">
+						{home ? (
+							<>
 								<img
 									src="/images/me_2024_alt.jpg"
-									className="size-24 rounded-full object-cover"
+									className="size-32 rounded-full object-cover"
 									alt="Will Honey with wife in 2024"
 								/>
-							</a>
-							<h2 className="my-4 text-2xl leading-snug font-bold">
-								<a href="/" className="text-inherit!">
+								<h1 className="my-4 text-[2.6rem] leading-[1.2] font-extrabold">
 									Will Honey
+								</h1>
+							</>
+						) : (
+							<>
+								<a href="/">
+									<img
+										src="/images/me_2024_alt.jpg"
+										className="size-24 rounded-full object-cover"
+										alt="Will Honey with wife in 2024"
+									/>
 								</a>
-							</h2>
-						</>
-					)}
-				</header>
-				<main className="min-h-[500px]">{children}</main>
-				{home ? null : (
-					<div className="mt-12">
-						<a href="/">← Back to home</a>
-					</div>
-				)}
-				<SocialLinks />
-				<BouncingWinston />
-			</div>
+								<h2 className="my-4 text-2xl leading-snug font-bold">
+									<a href="/" className="text-inherit!">
+										Will Honey
+									</a>
+								</h2>
+							</>
+						)}
+					</header>
+					<main className="min-h-[500px]">{children}</main>
+					<SocialLinks />
+					<BouncingWinston />
+				</div>
+			</>
+		);
+	};
+}
+
+function PrimaryNavigation(handle: Handle<{ section?: SiteSection }>) {
+	return () => {
+		let { section } = handle.props;
+
+		return (
+			<nav
+				aria-label="Primary navigation"
+				className="sticky top-0 z-50 bg-sky-950 text-sm shadow-sm"
+			>
+				<div className="mx-auto flex max-w-[38rem] gap-7 px-4 py-4">
+					<NavigationLink
+						active={section === 'home'}
+						href={routes.home.href()}
+						label="Home"
+					/>
+					<NavigationLink
+						active={section === 'blog'}
+						href={routes.blog.href()}
+						label="Blog"
+					/>
+				</div>
+			</nav>
+		);
+	};
+}
+
+function NavigationLink(handle: Handle<{ active: boolean; href: string; label: string }>) {
+	return () => {
+		let { active, href, label } = handle.props;
+
+		return (
+			<a
+				aria-current={active ? 'page' : undefined}
+				className={`font-medium text-normal ${
+					active
+						? 'text-sky-100 underline decoration-2 underline-offset-4'
+						: 'text-sky-100/70 hover:text-sky-100'
+				}`}
+				href={href}
+			>
+				{label}
+			</a>
 		);
 	};
 }

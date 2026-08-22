@@ -12,7 +12,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 
 		return (
 			<Document title={siteTitle}>
-				<SiteLayout home>
+				<SiteLayout home section="home">
 					<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800">
 						<p>
 							Hi! 👋 <br />
