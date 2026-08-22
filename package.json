@@ -5,9 +5,12 @@
 	"type": "module",
 	"scripts": {
 		"build-posts": "node --import remix/node-tsx scripts/build-posts.ts",
+		"prebuild": "npm run build-posts",
+		"build": "vite build",
 		"predev": "npm run build-posts",
-		"dev": "NODE_ENV=development node --watch --import remix/node-tsx server.ts",
-		"start": "NODE_ENV=production node --import remix/node-tsx server.ts",
+		"dev": "vite",
+		"dev:netlify": "vite --mode netlify",
+		"preview": "vite preview",
 		"test": "NODE_ENV=test node --import remix/node-tsx --test",
 		"typecheck": "tsc --noEmit"
 	},
@@ -16,15 +19,19 @@
 	},
 	"dependencies": {
 		"date-fns": "^4.1.0",
-		"remix": "^3.0.0-beta.5"
+		"remix": "^3.0.0-beta.10"
 	},
 	"devDependencies": {
 		"@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+		"@netlify/vite-plugin": "^2.12.9",
+		"@pitlane/dev": "^0.3.0",
 		"@types/node": "^26.1.1",
 		"gray-matter": "^4.0.3",
+		"netlify-cli": "^27.1.2",
 		"prettier": "^3.3.3",
 		"remark": "^15.0.1",
 		"remark-html": "^16.0.1",
-		"typescript": "^7.0.2"
+		"typescript": "^5.9.3",
+		"vite": "^7.3.6"
 	}
 }

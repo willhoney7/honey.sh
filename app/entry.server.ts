@@ -1,3 +1,4 @@
+import { asyncContext } from 'remix/middleware/async-context';
 import { staticFiles } from 'remix/middleware/static';
 import { createRouter, type MiddlewareContext } from 'remix/router';
 
@@ -15,8 +16,17 @@ declare module 'remix/router' {
 }
 
 export const router = createRouter<AppContext>({
-	middleware: [staticFiles('./public', { index: false }), render()],
+	middleware: [
+		staticFiles('./public', { index: false }),
+		staticFiles('./dist/client', { index: false }),
+		asyncContext(),
+		render(),
+	],
 });
 
 router.map(routes, rootController);
 router.map(routes.posts, postsController);
+
+export default router;
+
+if (import.meta.hot) import.meta.hot.accept();

@@ -1,6 +1,10 @@
+import { HMR } from 'pitlane:dev';
 import type { Handle, RemixNode } from 'remix/ui';
 
-import { routes } from '../routes.ts';
+import { mergeAssets } from '@pitlane/dev/runtime';
+
+import clientAssets from '../entry.browser.ts?assets=client';
+import serverAssets from '../entry.server.ts?assets=ssr';
 import {
 	faviconHref,
 	siteDescription,
@@ -20,6 +24,7 @@ export { siteTitle };
 export function Document(handle: Handle<DocumentProps>) {
 	return () => {
 		let { children, head, title = siteTitle } = handle.props;
+		let assets = mergeAssets(clientAssets, serverAssets);
 
 		return (
 			<html lang="en">
@@ -32,14 +37,18 @@ export function Document(handle: Handle<DocumentProps>) {
 					<meta name="og:title" content={siteTitle} />
 					<meta name="twitter:card" content={twitterCard} />
 					<title>{title}</title>
+					{assets.css.map((attrs) => (
+						<link key={attrs.href} {...attrs} rel="stylesheet" />
+					))}
+					{assets.js.map((attrs) => (
+						<link key={attrs.href} {...attrs} rel="modulepreload" />
+					))}
 					{head}
 				</head>
 				<body>
 					{children}
-					<script
-						type="module"
-						src={routes.assets.href({ path: 'app/assets/entry.ts' })}
-					></script>
+					<HMR />
+					<script type="module" src={clientAssets.entry}></script>
 				</body>
 			</html>
 		);
