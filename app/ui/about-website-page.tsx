@@ -51,7 +51,7 @@ export function AboutWebsitePage() {
 							<li>
 							This fifth version, shipped in 2026, was built with{' '}
 							<a href="https://remix.run/" rel="noreferrer noopener">
-								Remix
+								Remix (3)
 							</a>{' '}
 							.
 						</li>

@@ -52,12 +52,12 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 									obsessively tracking my listening habits.
 								</a>
 							</li>
-							<li>Pickleball and trying not to be overly competitive.</li>
+							<li>Pickleball! I used to play a lot of Ultimate, but no longer.</li>
 							<li>
 								Introducing my kids to Pokemon Fire Red and other childhood
 								classics.
 							</li>
-							<li>Watching TV shows.</li>
+							<li>Watching TV shows, and playing video games when I get a moment.</li>
 						</ul>
 						<p>
 							Welcome to the fifth iteration of my{' '}
