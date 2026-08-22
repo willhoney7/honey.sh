@@ -3,7 +3,6 @@ import type { Handle } from 'remix/ui';
 import type { PostSummary } from '../data/posts.ts';
 import { routes } from '../routes.ts';
 import { Document, siteTitle } from './document.tsx';
-import { PostList } from './post-list.tsx';
 import { SiteLayout } from './site-layout.tsx';
 
 export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
@@ -35,16 +34,15 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 							as their CTO and live in Kansas City with my wife, three little girls,
 							and dog named Winston.
 						</p>
-						<p>Some of my recent technical interests include:</p>
+						<p>Some of my current (technical) favorites include:</p>
 						<ul>
-							<li>React and Tanstack Start</li>
+							<li>Tanstack Start</li>
 							<li>TypeScript</li>
 							<li>Rust</li>
-							<li>Vite and Vitest</li>
 							<li>Tailwind</li>
-							<li>Prettier</li>
+							<li>Drizzle</li>
 						</ul>
-						<p>Some of my non-technical interests include:</p>
+						<p>Some of my interests include:</p>
 						<ul>
 							<li>
 								Music and{' '}
@@ -65,12 +63,10 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 							Welcome to the fifth iteration of my{' '}
 							<a href={routes.aboutWebsite.href()}>website</a>.
 						</p>
-					</section>
-					<section className="pt-px">
-						<h2 className="my-4 text-2xl leading-snug font-bold">
-							<a href={routes.blog.href()}>Blog</a>
-						</h2>
-						<PostList posts={allPostsData} />
+						
+						<p>
+							You can find my <a href={routes.blog.href()}>blog here</a>.
+						</p>
 					</section>
 				</SiteLayout>
 			</Document>
