@@ -3,6 +3,7 @@ import type { Handle } from 'remix/ui';
 import type { PostSummary } from '../data/posts.ts';
 import { routes } from '../routes.ts';
 import { Date } from './date.tsx';
+import { PostTags } from './post-tags.tsx';
 
 export function PostList(handle: Handle<{ posts: PostSummary[] }>) {
 	return () => {
@@ -20,13 +21,7 @@ export function PostList(handle: Handle<{ posts: PostSummary[] }>) {
 							<span aria-hidden="true" className="text-neutral-300">
 								·
 							</span>
-							<span className="inline-flex gap-1.5">
-								{tags.map((tag) => (
-									<span className={tagClassNames[tag]} key={tag}>
-										{tag}
-									</span>
-								))}
-							</span>
+							<PostTags tags={tags} />
 						</div>
 					</li>
 				))}
@@ -34,8 +29,3 @@ export function PostList(handle: Handle<{ posts: PostSummary[] }>) {
 		);
 	};
 }
-
-export const tagClassNames = {
-	dev: 'inline-flex items-center rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-700 ring-1 ring-sky-200 ring-inset',
-	life: 'inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-800 ring-1 ring-amber-200 ring-inset',
-} as const;

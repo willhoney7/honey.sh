@@ -3,7 +3,7 @@ import type { Handle } from 'remix/ui';
 import type { PostData } from '../data/posts.ts';
 import { Date } from './date.tsx';
 import { Document } from './document.tsx';
-import { tagClassNames } from './post-list.tsx';
+import { PostTags } from './post-tags.tsx';
 import { SiteLayout } from './site-layout.tsx';
 
 export function PostPage(handle: Handle<{ postData: PostData }>) {
@@ -22,13 +22,7 @@ export function PostPage(handle: Handle<{ postData: PostData }>) {
 							<span aria-hidden="true" className="text-neutral-300">
 								·
 							</span>
-							<span className="inline-flex gap-1.5">
-								{postData.tags.map((tag) => (
-									<span className={tagClassNames[tag]} key={tag}>
-										{tag}
-									</span>
-								))}
-							</span>
+							<PostTags tags={postData.tags} />
 						</div>
 						<div
 							className="prose prose-neutral mt-8 max-w-none prose-a:text-red-800"
