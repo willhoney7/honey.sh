@@ -2,8 +2,8 @@ import type { Handle } from 'remix/ui';
 
 import type { PostSummary } from '../data/posts.ts';
 import { routes } from '../routes.ts';
-import { Date } from './date.tsx';
 import { Document, siteTitle } from './document.tsx';
+import { PostList } from './post-list.tsx';
 import { SiteLayout } from './site-layout.tsx';
 
 export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
@@ -13,7 +13,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 		return (
 			<Document title={siteTitle}>
 				<SiteLayout home>
-					<section className="heading-md">
+					<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800">
 						<p>
 							Hi! 👋 <br />
 							<br />I sit at the intersection of engineering, product, and design. I
@@ -52,7 +52,9 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 									obsessively tracking my listening habits.
 								</a>
 							</li>
-							<li>Pickleball! I used to play a lot of Ultimate, but no longer.</li>
+							<li>
+								Pickleball! I used to play a lot of Ultimate, but then I got old.
+							</li>
 							<li>
 								Introducing my kids to Pokemon Fire Red and other childhood
 								classics.
@@ -64,19 +66,11 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 							<a href={routes.aboutWebsite.href()}>website</a>.
 						</p>
 					</section>
-					<section className="heading-md padding-1px">
-						<h2 className="heading-lg">Blog</h2>
-						<ul className="list">
-							{allPostsData.map(({ id, date, title }) => (
-								<li className="list-item" key={id}>
-									<a href={routes.posts.show.href({ id })}>{title}</a>
-									<br />
-									<small className="light-text">
-										<Date dateString={date} />
-									</small>
-								</li>
-							))}
-						</ul>
+					<section className="pt-px">
+						<h2 className="my-4 text-2xl leading-snug font-bold">
+							<a href={routes.blog.href()}>Blog</a>
+						</h2>
+						<PostList posts={allPostsData} />
 					</section>
 				</SiteLayout>
 			</Document>

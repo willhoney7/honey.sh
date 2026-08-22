@@ -2,7 +2,8 @@ import { defineConfig } from 'vite';
 
 import netlify from '@netlify/vite-plugin';
 import { remix } from '@pitlane/dev';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(({ mode }) => ({
-	plugins: [remix(), mode === 'netlify' && netlify()],
+	plugins: [tailwindcss(), remix(), mode === 'netlify' && netlify()],
 }));

@@ -5,7 +5,7 @@ export function AboutWebsitePage() {
 	return () => (
 		<Document title={siteTitle}>
 			<SiteLayout>
-				<section className="heading-md">
+				<section className="prose prose-lg prose-neutral max-w-none prose-a:text-red-800">
 					<p>
 						This is the <strong>fourth</strong> iteration of my personal website.
 					</p>
@@ -48,7 +48,7 @@ export function AboutWebsitePage() {
 							</a>{' '}
 							with a lightly modified starter template 😱.
 						</li>
-							<li>
+						<li>
 							This fifth version, shipped in 2026, was built with{' '}
 							<a href="https://remix.run/" rel="noreferrer noopener">
 								Remix (3)

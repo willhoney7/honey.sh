@@ -1,6 +1,9 @@
 ---
 title: 'My Programming Journey'
 date: '2020-10-12'
+tags:
+  - dev
+  - life
 ---
 
 I grew up in Manhattan, Kansas. In middle school, I really wanted an iPhone, but

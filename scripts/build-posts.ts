@@ -18,10 +18,10 @@ let posts = await Promise.all(
 		let filePath = path.join(postsDirectory, fileName);
 		let source = await fs.readFile(filePath, 'utf8');
 		let { content, data } = matter(source);
-		let { date, title } = readMetadata(data, filePath);
+		let { date, tags, title } = readMetadata(data, filePath);
 		let html = String(await remark().use(remarkHtml).process(content));
 
-		return { id, date, title, html };
+		return { id, date, tags, title, html };
 	})
 );
 
@@ -33,8 +33,11 @@ let prettierConfig = await resolveConfig(outputPath);
 await fs.writeFile(outputPath, await format(output, { ...prettierConfig, filepath: outputPath }));
 
 function readMetadata(data: Record<string, unknown>, filePath: string) {
-	let { date, title } = data;
+	let { date, tags, title } = data;
 	if (!date || typeof date !== 'string') throw new Error(`Missing date in ${filePath}`);
 	if (!title || typeof title !== 'string') throw new Error(`Missing title in ${filePath}`);
-	return { date, title };
+	if (!Array.isArray(tags) || tags.some((tag) => tag !== 'dev' && tag !== 'life')) {
+		throw new Error(`Tags in ${filePath} must be an array containing only "dev" or "life"`);
+	}
+	return { date, tags, title };
 }

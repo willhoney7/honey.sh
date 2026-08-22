@@ -2,6 +2,8 @@ import { asyncContext } from 'remix/middleware/async-context';
 import { staticFiles } from 'remix/middleware/static';
 import { createRouter, type MiddlewareContext } from 'remix/router';
 
+import './styles.css';
+
 import rootController from './actions/controller.tsx';
 import postsController from './actions/posts/controller.tsx';
 import { render } from './middleware/render.tsx';

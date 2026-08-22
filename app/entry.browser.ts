@@ -1,5 +1,7 @@
 import { run } from 'remix/ui';
 
+import './styles.css';
+
 run({
 	async loadModule(moduleUrl, exportName) {
 		let mod = await import(/* @vite-ignore */ moduleUrl);

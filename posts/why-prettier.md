@@ -1,7 +1,8 @@
 ---
 title: Why Prettier
 description:
-tags: Prettier, JavaScript, ESLint, Formatting
+tags:
+  - dev
 date: '2019-02-19'
 ---
 

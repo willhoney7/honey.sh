@@ -5,13 +5,7 @@ import { mergeAssets } from '@pitlane/dev/runtime';
 
 import clientAssets from '../entry.browser.ts?assets=client';
 import serverAssets from '../entry.server.ts?assets=ssr';
-import {
-	faviconHref,
-	siteDescription,
-	siteTitle,
-	stylesheetHref,
-	twitterCard,
-} from './site-meta.ts';
+import { faviconHref, siteDescription, siteTitle, twitterCard } from './site-meta.ts';
 
 export interface DocumentProps {
 	children?: RemixNode;
@@ -32,7 +26,6 @@ export function Document(handle: Handle<DocumentProps>) {
 					<meta charSet="utf-8" />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<link rel="icon" href={faviconHref} />
-					<link rel="stylesheet" href={stylesheetHref} />
 					<meta name="description" content={siteDescription} />
 					<meta name="og:title" content={siteTitle} />
 					<meta name="twitter:card" content={twitterCard} />

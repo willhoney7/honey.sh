@@ -5,37 +5,39 @@ export function SiteLayout(handle: Handle<{ children?: RemixNode; home?: boolean
 		let { children, home = false } = handle.props;
 
 		return (
-			<div className="container">
-				<header className="header">
+			<div className="mx-auto mt-12 mb-24 max-w-[38rem] px-4 text-[17px] leading-6 text-neutral-800 [&_a]:text-red-800 [&_a]:no-underline [&_a:hover]:underline">
+				<header className="flex flex-col items-center">
 					{home ? (
 						<>
 							<img
 								src="/images/me_2024_alt.jpg"
-								className="header-home-image border-circle"
+								className="size-32 rounded-full object-cover"
 								alt="Will Honey with wife in 2024"
 							/>
-							<h1 className="heading-2xl">Will Honey</h1>
+							<h1 className="my-4 text-[2.6rem] leading-[1.2] font-extrabold">
+								Will Honey
+							</h1>
 						</>
 					) : (
 						<>
 							<a href="/">
 								<img
 									src="/images/me_2024_alt.jpg"
-									className="header-image border-circle"
+									className="size-24 rounded-full object-cover"
 									alt="Will Honey with wife in 2024"
 								/>
 							</a>
-							<h2 className="heading-lg">
-								<a href="/" className="color-inherit">
+							<h2 className="my-4 text-2xl leading-snug font-bold">
+								<a href="/" className="text-inherit!">
 									Will Honey
 								</a>
 							</h2>
 						</>
 					)}
 				</header>
-				<main className="main">{children}</main>
+				<main className="min-h-[500px]">{children}</main>
 				{home ? null : (
-					<div className="back-to-home">
+					<div className="mt-12">
 						<a href="/">← Back to home</a>
 					</div>
 				)}
@@ -48,7 +50,7 @@ export function SiteLayout(handle: Handle<{ children?: RemixNode; home?: boolean
 
 function SocialLinks() {
 	return () => (
-		<footer className="social-links">
+		<footer className="mt-12 flex gap-x-3 border-t border-neutral-200 pt-4 opacity-90 [&_img]:size-9">
 			<a href="https://twitter.com/tibfib" target="_blank" rel="noreferrer noopener">
 				<img alt="@Tibfib on Twitter" src="/images/social/iconmonstr-twitter.png" />
 			</a>
@@ -71,8 +73,8 @@ function SocialLinks() {
 
 function BouncingWinston() {
 	return () => (
-		<div className="winston-container" aria-hidden="true">
-			<div className="winston" />
+		<div className="fixed right-[20%] -bottom-28" aria-hidden="true">
+			<div className="size-24 animate-[bob_1500ms_ease_0s_6_alternate] rounded-sm bg-[#d79b5f] [background-image:url('/images/winston_small.jpg')] bg-cover hover:[animation-play-state:paused] hover:[background-image:url('/images/winston_goofy_small.jpg')] motion-reduce:hidden" />
 		</div>
 	);
 }
