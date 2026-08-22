@@ -45,7 +45,6 @@ export function SiteLayout(
 					</header>
 					<main className="min-h-[500px]">{children}</main>
 					<SocialLinks />
-					<BouncingWinston />
 				</div>
 			</>
 		);
@@ -118,13 +117,5 @@ function SocialLinks() {
 				<img alt="@willhoney7 on Github" src="/images/social/iconmonstr-github.png" />
 			</a>
 		</footer>
-	);
-}
-
-function BouncingWinston() {
-	return () => (
-		<div className="fixed right-[20%] -bottom-28" aria-hidden="true">
-			<div className="size-24 animate-[bob_1500ms_ease_0s_6_alternate] rounded-sm bg-[#d79b5f] [background-image:url('/images/winston_small.jpg')] bg-cover hover:[animation-play-state:paused] hover:[background-image:url('/images/winston_goofy_small.jpg')] motion-reduce:hidden" />
-		</div>
 	);
 }

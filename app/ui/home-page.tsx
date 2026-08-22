@@ -32,7 +32,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 								Operational Results
 							</a>{' '}
 							as their CTO and live in Kansas City with my wife, three little girls,
-							and dog named Winston.
+							and dog named <a href={routes.winston.href()}>Winston</a>.
 						</p>
 						<p>Some of my current (technical) favorites include:</p>
 						<ul>
@@ -57,7 +57,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 								Introducing my kids to Pokemon Fire Red and other childhood
 								classics.
 							</li>
-							<li>Watching TV shows, and playing video games when I get a moment.</li>
+							<li>Watching sports, TV shows, and playing video games when I get a moment.</li>
 						</ul>
 						<p>
 							Welcome to the fifth iteration of my{' '}

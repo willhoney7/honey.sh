@@ -7,6 +7,7 @@ export const routes = route({
 	blogTag: '/blog/tags/:tag',
 	blogTagPage: '/blog/tags/:tag/page/:page',
 	aboutWebsite: '/about-website',
+	winston: '/winston',
 	posts: route('/posts', {
 		show: '/:id',
 	}),

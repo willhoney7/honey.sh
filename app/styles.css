@@ -1,11 +1,2 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-
-@keyframes bob {
-	from {
-		transform: translateY(0);
-	}
-	to {
-		transform: translateY(-8.5rem);
-	}
-}

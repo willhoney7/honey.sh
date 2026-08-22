@@ -5,6 +5,7 @@ import { routes } from '../routes.ts';
 import { AboutWebsitePage } from '../ui/about-website-page.tsx';
 import { BlogPage } from '../ui/blog-page.tsx';
 import { HomePage } from '../ui/home-page.tsx';
+import { WinstonPage } from '../ui/winston-page.tsx';
 
 export default createController(routes, {
 	actions: {
@@ -37,6 +38,9 @@ export default createController(routes, {
 		},
 		aboutWebsite(context) {
 			return context.render(<AboutWebsitePage />);
+		},
+		winston(context) {
+			return context.render(<WinstonPage />);
 		},
 	},
 });
