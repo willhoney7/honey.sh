@@ -7,7 +7,7 @@ tags:
 
 ---
 
-I've been using macOS for 20(?) years and I've gone through a ton of different variations of setups for window management. I think I've *finally* found the ideal setup for me.
+I've been using macOS for 16(?) years and I've gone through a ton of different variations of setups for window management. I think I've *finally* found the ideal setup for me.
 
 My current monitor is a 32" 4K which is very nice, but also quite large!
 

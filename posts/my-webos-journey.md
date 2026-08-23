@@ -1,5 +1,5 @@
 ---
-title: 'My Programming Journey'
+title: 'My webOS Journey'
 date: '2020-10-12'
 tags:
   - dev
@@ -44,30 +44,15 @@ out I was 16ish. One day I'll write more about the experience.
 
 In 2010, HP bought Palm and one of their new products was the HP Touchpad, a
 tablet to compete with the iPad. I built a Google Reader client for it called
-NomNomNom. Eventually, HP gave up on Palm and webOS and cut the Touchpad price
+NomNomNom. 
+
+![Screenshot of NomNomNom, a Google Reader client for the HP Touchpad](/images/my-programming-journey/nomnomnom.png)
+
+Eventually, HP gave up on Palm and webOS and cut the Touchpad price
 way down to get rid of inventory. Over night, there were thousands of more
 devices out there but still the same amount of applications for sale. I still
 remember the feeling of opening of the app catalog developer portal and seeing
 how many sales I'd had. It was a wild time.
 
-![Screenshot of NomNomNom, a Google Reader client for the HP Touchpad](/images/my-programming-journey/nomnomnom.png)
+I bought my first macbook air with that money and lots of milkshakes from sonic.
 
-In 2012, I started in the Computer Science program at BYU. I honestly didn't
-enjoy it very much, but I knew that software development was what I wanted to do
-for my career. I worked for a random, poorly run startup for a few months until
-the two cofounders had a falling out and abandoned the project. From there, I
-worked on a special project for the BYU IT department measuring server
-performance. It was an interesting experience, the software I worked with
-supported a weird Java + JavaScript hybrid language.
-
-I started working at Operational Results (ORI) in the summer of 2015 as a
-frontend developer. That went well and I continued working with them while
-I finished my degree––working full-time in the summer and part-time during
-school. Early on, the lead frontend developer quit and I grew into that role.
-I learned and grew a ton in my first three years at ORI.
-
-I graduated in 2018 with my Computer Science Degree and moved to Xactware as a
-Senior Frontend Developer. I enjoyed it but began to miss the small company feeling
-of being _involved_. After a year, one of my coworkers from ORI reached out with an
-opportunity to come back and lead the product team. After some consideration I
-accepted and have since been promoted to CTO.
