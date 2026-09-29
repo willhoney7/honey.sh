@@ -21,7 +21,7 @@ export function HomePage(handle: Handle<{ allPostsData: PostSummary[] }>) {
 						<p>
 							I've been at this for 15+ years now. I got my start making apps for the
 							webOS platform. You can read more about my programming journey in{' '}
-							<a href={routes.posts.show.href({ id: 'my-programming-journey' })}>
+							<a href={routes.posts.show.href({ id: 'my-webos-journey' })}>
 								this blog post
 							</a>
 							.
